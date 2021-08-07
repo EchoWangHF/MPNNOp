@@ -1,2 +1,2 @@
-# MPNNOp
-Multi platform neural network operator
+# MNNL
+multi platform neural network operator library

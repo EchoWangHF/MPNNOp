@@ -9,9 +9,11 @@ function format_file(){
   if [ "${1##*.}"x == "cpp"x ]||[ "${1##*.}"x == "c"x ] || [ "${1##*.}"x == "mlu"x ]\
      || [ "${1##*.}"x == "cu"x ] || [ "${1##*.}"x == "h"x ] || [ "${1##*.}"x == "hpp"x ]
   then
+    echo $1
     clang-format -style=Google -i $1
-  else
-    echo "sorry, style_format just support *.cpp, *.c, *.h, *.hpp, *.mlu or *.cu now!"
+  #else
+    #do nothing.
+    #echo "sorry, style_format just support *.cpp, *.c, *.h, *.hpp, *.mlu or *.cu now!"
   fi
 }
 
@@ -22,7 +24,7 @@ do
   then
     read_dir $1"/"$file
   else
-    echo $1"/"$file #在此处处理文件即可
+    #echo $1"/"$file #在此处处理文件即可
     #clang-format -style=Google -i $1"/"$file
     format_file $1"/"$file
   fi
@@ -38,7 +40,7 @@ do
     read_dir $var
   elif [ -f $var ]
   then
-    echo "$var"
+    #echo "$var"
     #clang-format -style=Google -i $var
     format_file $var
   else

@@ -1,5 +1,5 @@
 
-#include "half.h"
+#include "core/half.h"
 
 half_t half::convertFloat2Half(const float &data) const {
   /*

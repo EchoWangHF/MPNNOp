@@ -1,5 +1,7 @@
 #include "core/half.h"
 
+using namespace MNNL;
+
 int main() {
   half half_a = -0.3;
   std::cout << half_a << std::endl;

@@ -4,9 +4,10 @@
  * Email : 1427014893@qq.com
  */
 
-#ifndef H_
-#define H_
-namespace MPNN {
+#ifndef KERNELS_INCLUDE_CORE_CORE_H_
+#define KERNELS_INCLUDE_CORE_CORE_H_
+
+namespace MNNL {
 enum DataType {
   DTYPE_INT32 = 0,
   DTYPE_INT16 = 1,
@@ -26,6 +27,6 @@ enum Device {
   MLU = 2,
 };
 
-};  // namespace MPNN
+};  // namespace MNNL
 
-#undef
+#endif

@@ -4,16 +4,16 @@
  * Email : 1427014893@qq.com
  */
 
-#ifndef CORE_TENSOR_H_
-#define CORE_TENSOR_H_
+#ifndef KERNELS_INCLUDE_CORE_BASEOP_H_
+#define KERNELS_INCLUDE_CORE_BASEOP_H_
 
 #include <assert.h>
 #include <stdint.h>
 #include <vector>
 
-#include mpnn.h
+#include "core/core.h"
 
-namespace MPNN {
+namespace MNNL {
 class BaseOp {
  public:
   BaseOp(){};
@@ -23,6 +23,6 @@ class BaseOp {
  private:
   virtual void cpuCompute();
 };
-};  // namespace MPNN
+};  // namespace MNNL
 
-#undef
+#endif

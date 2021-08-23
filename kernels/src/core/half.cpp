@@ -1,6 +1,12 @@
+/*
+ * The head file for half.
+ * Author: wangjun
+ * Email : 1427014893@qq.com
+ */
 
 #include "core/half.h"
 
+namespace MNNL {
 half_t half::convertFloat2Half(const float &data) const {
   /*
   // The note can tell how convert step by step;
@@ -44,3 +50,4 @@ float half::convertHalf2Float(const half_t &data) const {
   float_bit |= ((data & 0x8000) << 16);
   return *(float *)&float_bit;
 }
+};  // namespace MNNL

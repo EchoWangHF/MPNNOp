@@ -1,7 +1,17 @@
-#pragma once
+/*
+ * The head file for half dtype.
+ * Author: wangjun
+ * Email : 1427014893@qq.com
+ */
+
+#ifndef KERNELS_INCLUDE_CORE_HALF_H_
+#define KERNELS_INCLUDE_CORE_HALF_H_
+
 #include <stdint.h>
 #include <iostream>
 #include <memory>
+
+namespace MNNL {
 
 typedef uint16_t half_t;
 
@@ -36,3 +46,6 @@ class half {
  private:
   half_t _data;
 };
+
+};  // namespace MNNL
+#endif

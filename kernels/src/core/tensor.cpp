@@ -6,8 +6,8 @@
 
 #include "core/tensor.h"
 
-// namespace MPNN {
-// tensorDesc::tensorDesc(const DataType &dtype, const Layout &layout,
+namespace MNNL {
+//tensorDesc::tensorDesc(const DataType &dtype, const Layout &layout,
 //                       const uint32_t &dims_size, const uint32_t *dims[])
 //    : _dtype(dtype), _layout(layout), _dims_size(dims_size) {
 //  assert(dims != nullptr);
@@ -15,4 +15,4 @@
 //  std::vector<uint32_t> dims_temp(dims, dims + dims_size);
 //  _dims = dims_temp;
 //}
-//};  // namespace MPNN
+};  // namespace MNNL

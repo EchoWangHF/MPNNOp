@@ -4,9 +4,10 @@
  * Email : 1427014893@qq.com
  */
 
-//#include "core/baseop.h"
-//
-// namespace MPNN {
+#include "core/baseop.h"
+
+namespace MNNL {
+
 // BaseOp::compute(Device device) {
 //  switch (device) {
 //    case CPU:
@@ -15,4 +16,5 @@
 //    default:
 //      assert(0);
 //  }
-//};
+//}
+};
